@@ -1,18 +1,12 @@
 #include <stdio.h>
 #include <math.h>
-
-int main() {
-    float r;
-    float chuVi, dienTich;
-
-    printf("Nhap ban kinh hinh tron: ");
-    scanf("%f", &r);
-
-    chuVi = 2 * M_PI * r;
-    dienTich = M_PI * r * r;
-
-    printf("\nChu vi = %.2f\n", chuVi);
-    printf("Dien tich = %.2f\n", dienTich);
-
-    return 0;
+int main (){
+	float r ;
+	printf("Nhap ban kinh :") ;
+	scanf("%f" , &r) ;
+	float perimeter = 2 * M_PI * r ;
+	float acreage = M_PI * pow(r,2) ;
+	printf("%.2f\n" , perimeter ) ;
+	printf("%.2f" , acreage ) ;
+	return 0 ;  
 }
